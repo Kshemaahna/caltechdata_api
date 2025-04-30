@@ -411,6 +411,7 @@ def upload_supporting_file(record_id=None):
                     for files_name in files:
                         filepath = os.path.abspath(files_name)
                         filepaths.append(filepath)
+                    print("All files added successfully")
                 if filename == "n":
                     break
                 if filename in files:
@@ -424,6 +425,7 @@ def upload_supporting_file(record_id=None):
                     else:
                         filepath = os.path.abspath(filename)
                         filepaths.append(filepath)
+                        print("File added successfully")
                 else:
                     print(
                         f"Error: File '{filename}' not found. Please enter a valid filename."
